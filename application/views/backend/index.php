@@ -10,20 +10,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
     <title>Elite Hospital Admin Template - Hospital admin dashboard web app kit</title>
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
-    <!-- wysihtml5 CSS -->
-    <link rel="stylesheet" href="../plugins/bower_components/html5-editor/bootstrap-wysihtml5.css" />
-    <!-- Dropzone css -->
-    <link href="../plugins/bower_components/dropzone-master/dist/dropzone.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
     <!-- animation CSS -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet">
     <!-- color CSS -->
-    <link href="css/colors/megna.css" id="theme" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/colors/megna.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,23 +35,22 @@
         <div class="cssload-speeding-wheel"></div>
     </div>
     <div id="wrapper">
-        <!-- Top Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top m-b-0">
             <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
-                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/eliteadmin-logo.png" alt="home" /></b><span class="hidden-xs"><strong>elite</strong>hospital</span></a></div>
+                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="<?php echo base_url(); ?>assets/plugins/images/eliteadmin-logo.png" alt="home" /></b><span class="hidden-xs"><strong>elite</strong>hospital</span></a></div>
                 <ul class="nav navbar-top-links navbar-left hidden-xs">
                     <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
                     <li>
                         <form role="search" class="app-search hidden-xs">
-                            <input type="text" placeholder="Search..." class="form-control">
-                            <a href=""><i class="fa fa-search"></i></a>
+                            <input type="text" placeholder="..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
                         </form>
                     </li>
                 </ul>
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
-          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
-          </a>
+                            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+                        </a>
                         <ul class="dropdown-menu mailbox animated bounceInDown">
                             <li>
                                 <div class="drop-title">You have 4 new messages</div>
@@ -62,28 +58,28 @@
                             <li>
                                 <div class="message-center">
                                     <a href="#">
-                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                        <div class="user-img"> <img src="<?php echo base_url(); ?><?php echo base_url(); ?>assets/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                         <div class="mail-contnet">
-                                            <h5>Pavan kumar</h5>
-                                            <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
+                                        </div>
                                     </a>
                                     <a href="#">
-                                        <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                        <div class="user-img"> <img src="<?php echo base_url(); ?><?php echo base_url(); ?>assets/plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
                                         <div class="mail-contnet">
-                                            <h5>Sonu Nigam</h5>
-                                            <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                                            <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                        </div>
                                     </a>
                                     <a href="#">
-                                        <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                        <div class="user-img"> <img src="<?php echo base_url(); ?><?php echo base_url(); ?>assets/plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
                                         <div class="mail-contnet">
-                                            <h5>Arijit Sinh</h5>
-                                            <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                                            <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
+                                        </div>
                                     </a>
                                     <a href="#">
-                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                        <div class="user-img"> <img src="<?php echo base_url(); ?><?php echo base_url(); ?>assets/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
                                         <div class="mail-contnet">
-                                            <h5>Pavan kumar</h5>
-                                            <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                        </div>
                                     </a>
                                 </div>
                             </li>
@@ -95,8 +91,8 @@
                     </li>
                     <!-- /.dropdown -->
                     <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-note"></i>
-          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
-          </a>
+                            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+                        </a>
                         <ul class="dropdown-menu dropdown-tasks animated slideInUp">
                             <li>
                                 <a href="#">
@@ -149,37 +145,16 @@
                         <!-- /.dropdown-tasks -->
                     </li>
                     <!-- /.dropdown -->
-                    <!-- .Megamenu -->
-                    <li class="mega-dropdown">
-                        <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><span class="hidden-xs">Mega</span> <i class="icon-options-vertical"></i></a>
-                        <ul class="dropdown-menu mega-dropdown-menu animated bounceInDown">
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Header Title</li>
-                                    <li><a href="javascript:void(0)">Link of page</a> </li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Header Title</li>
-                                    <li><a href="javascript:void(0)">Link of page</a> </li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Header Title</li>
-                                    <li><a href="javascript:void(0)">Link of page</a> </li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-3">
-                                <ul>
-                                    <li class="dropdown-header">Header Title</li>
-                                    <li> <a href="javascript:void(0)">Link of page</a> </li>
-                                </ul>
-                            </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="<?php echo base_url(); ?>assete/plugins/images/users/d1.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Dr. Steave</b> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                            <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                            <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                         </ul>
+                        <!-- /.dropdown-user -->
                     </li>
-                    <!-- /.Megamenu -->
                     <li class="right-side-toggle"> <a class="waves-effect waves-light" href="javascript:void(0)"><i class="ti-settings"></i></a></li>
                     <!-- /.dropdown -->
                 </ul>
@@ -188,7 +163,6 @@
             <!-- /.navbar-top-links -->
             <!-- /.navbar-static-side -->
         </nav>
-        <!-- End Top Navigation -->
         <!-- Left navbar-header -->
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse slimscrollsidebar">
@@ -197,12 +171,13 @@
                         <!-- input-group -->
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" placeholder="Search..."> <span class="input-group-btn">
-            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
-            </span> </div>
+                                <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+                            </span>
+                        </div>
                         <!-- /input-group -->
                     </li>
                     <li class="user-pro">
-                        <a href="#" class="waves-effect"><img src="../plugins/images/users/d1.jpg" alt="user-img" class="img-circle"> <span class="hide-menu">Dr. Steve Gection<span class="fa arrow"></span></span>
+                        <a href="#" class="waves-effect"><img src="<?php echo base_url(); ?>assets/plugins/images/users/d1.jpg" alt="user-img" class="img-circle"> <span class="hide-menu">Dr. Steve Gection<span class="fa arrow"></span></span>
                         </a>
                         <ul class="nav nav-second-level">
                             <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
@@ -212,10 +187,11 @@
                         </ul>
                     </li>
                     <li class="nav-small-cap m-t-10">--- Main Menu</li>
-                    <li> <a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
+                    <li> <a href="index.html" class="waves-effect"><i class="ti-dashboard p-r-10"></i> <span class="hide-menu">Dashboard</span></a> </li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw text-danger" data-icon="7"></i> <span class="hide-menu text-danger"> Multipurpose <span class="fa arrow"></span> <span class="label label-rouded label-danger pull-right">HOT</span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="../eliteadmin-hospital/index.html">Hospital Admin</a> </li>
+                            <li> <a href="../eliteadmin-crm/index.html">CRM Admin</a> </li>
                             <li> <a href="../eliteadmin-university/index.html">University Admin</a> </li>
                             <li> <a href="../eliteadmin-music/index.html">Music Admin</a> </li>
                             <li> <a href="../eliteadmin-real-estate/index.html">Real Estate Admin</a> </li>
@@ -237,14 +213,14 @@
                             <li> <a href="../eliteadmin-inverse-rtl/index.html">Inverse RTL</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect active"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Mailbox<span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="icon-envelope p-r-10"></i> <span class="hide-menu"> Mailbox <span class="fa arrow"></span><span class="label label-rouded label-danger pull-right">6</span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="inbox.html">Inbox</a></li>
                             <li> <a href="inbox-detail.html">Inbox detail</a></li>
                             <li> <a href="compose.html">Compose mail</a></li>
                         </ul>
                     </li>
-                    <li class="nav-small-cap">--- Proffessional</li>
+                    <li class="nav-small-cap m-t-10">--- Professional</li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="ti-calendar p-r-10"></i> <span class="hide-menu"> Appointment <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="doctor-schedule.html">Doctor Schedule</a> </li>
@@ -330,7 +306,7 @@
                             <li><a href="starter-page.html">Starter Page</a></li>
                             <li><a href="blank.html">Blank Page</a></li>
                             <li><a href="javascript:void(0)" class="waves-effect">Email Templates
-            <span class="fa arrow"></span></a>
+                                    <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li><a href="../email-templates/basic.html">Basic</a></li>
                                     <li><a href="../email-templates/alert.html">Alert</a></li>
@@ -435,52 +411,266 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Compose Mail</h4>
+                        <h4 class="page-title">Hospital Dashboard</h4>
                     </div>
-                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <a href="https://themeforest.net/item/elite-admin-responsive-dashboard-web-app-kit-/16750820" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
                         <ol class="breadcrumb">
-                            <li><a href="#">Dashboard</a></li>
-                            <li class="active">Compose Mail</li>
+                            <li><a href="index.html">Hospital</a></li>
+                            <li class="active">Dashboard</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <!-- row -->
+                <!--row -->
                 <div class="row">
-                    <!-- Left sidebar -->
-                    <div class="col-md-12">
+                    <div class="col-md-3 col-sm-6">
                         <div class="white-box">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-3  col-sm-4 col-xs-12 inbox-panel">
-                                    <div> <a href="#" class="btn btn-custom btn-block waves-effect waves-light">Compose</a>
-                                        <div class="list-group mail-list m-t-20"> <a href="inbox.html" class="list-group-item active">Inbox <span class="label label-rouded label-success pull-right">5</span></a> <a href="#" class="list-group-item ">Starred</a> <a href="#" class="list-group-item">Draft <span class="label label-rouded label-warning pull-right">15</span></a> <a href="#" class="list-group-item">Sent Mail</a> <a href="#" class="list-group-item">Trash <span class="label label-rouded label-default pull-right">55</span></a> </div>
-                                        <h3 class="panel-title m-t-40 m-b-0">Labels</h3>
-                                        <hr class="m-t-5">
-                                        <div class="list-group b-0 mail-list"> <a href="#" class="list-group-item"><span class="fa fa-circle text-info m-r-10"></span>Work</a> <a href="#" class="list-group-item"><span class="fa fa-circle text-warning m-r-10"></span>Family</a> <a href="#" class="list-group-item"><span class="fa fa-circle text-purple m-r-10"></span>Private</a> <a href="#" class="list-group-item"><span class="fa fa-circle text-danger m-r-10"></span>Friends</a> <a href="#" class="list-group-item"><span class="fa fa-circle text-success m-r-10"></span>Corporate</a> </div>
-                                    </div>
+                            <div class="r-icon-stats">
+                                <i class="ti-user bg-megna"></i>
+                                <div class="bodystate">
+                                    <h4>370</h4>
+                                    <span class="text-muted">New Patient</span>
                                 </div>
-                                <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 mail_listing">
-                                    <h3 class="box-title">Compose New Message</h3>
-                                    <div class="form-group">
-                                        <input class="form-control" placeholder="To:">
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" placeholder="Subject:">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
-                                    </div>
-                                    <h4><i class="ti-link"></i> Attachment</h4>
-                                    <form action="#" class="dropzone">
-                                        <div class="fallback">
-                                            <input name="file" type="file" multiple />
-                                        </div>
-                                    </form>
-                                    <hr>
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
-                                    <button class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="white-box">
+                            <div class="r-icon-stats">
+                                <i class="ti-shopping-cart bg-info"></i>
+                                <div class="bodystate">
+                                    <h4>342</h4>
+                                    <span class="text-muted">OPD Patient</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="white-box">
+                            <div class="r-icon-stats">
+                                <i class="ti-wallet bg-success"></i>
+                                <div class="bodystate">
+                                    <h4>13</h4>
+                                    <span class="text-muted">Today's Ops.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="white-box">
+                            <div class="r-icon-stats">
+                                <i class="ti-wallet bg-inverse"></i>
+                                <div class="bodystate">
+                                    <h4>$34650</h4>
+                                    <span class="text-muted">Hospital Earning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/row -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title"><small class="pull-right m-t-10 text-success"><i class="fa fa-sort-asc"></i> 18% High then last month</small> New Patient</h3>
+                            <div class="stats-row">
+                                <div class="stat-item">
+                                    <h6>Overall</h6>
+                                    <b>80.40%</b>
+                                </div>
+                                <div class="stat-item">
+                                    <h6>Montly</h6>
+                                    <b>15.40%</b>
+                                </div>
+                                <div class="stat-item">
+                                    <h6>Day</h6>
+                                    <b>5.50%</b>
+                                </div>
+                            </div>
+                            <div id="sparkline8" class="minus-mar"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title"><small class="pull-right m-t-10 text-danger"><i class="fa fa-sort-desc"></i> 18% less then last month</small>OPD Patients</h3>
+                            <div class="stats-row">
+                                <div class="stat-item">
+                                    <h6>Overall</h6>
+                                    <b>80.40%</b>
+                                </div>
+                                <div class="stat-item">
+                                    <h6>Montly</h6>
+                                    <b>15.40%</b>
+                                </div>
+                                <div class="stat-item">
+                                    <h6>Day</h6>
+                                    <b>5.50%</b>
+                                </div>
+                            </div>
+                            <div id="sparkline9" class="minus-mar"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title"><small class="pull-right m-t-10 text-success"><i class="fa fa-sort-asc"></i> 18% High then last month</small>Treatment</h3>
+                            <div class="stats-row">
+                                <div class="stat-item">
+                                    <h6>Overall Growth</h6>
+                                    <b>80.40%</b>
+                                </div>
+                                <div class="stat-item">
+                                    <h6>Montly</h6>
+                                    <b>15.40%</b>
+                                </div>
+                                <div class="stat-item">
+                                    <h6>Day</h6>
+                                    <b>5.50%</b>
+                                </div>
+                            </div>
+                            <div id="sparkline10" class="minus-mar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!--row -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Patients In</h3>
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <h5><i class="fa fa-circle m-r-5" style="color: #00bfc7;"></i>OPD</h5>
+                                </li>
+                                <li>
+                                    <h5><i class="fa fa-circle m-r-5" style="color: #b4becb;"></i>ICU</h5>
+                                </li>
+                            </ul>
+                            <div id="morris-area-chart1" style="height: 370px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Hospital Earning</h3>
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <h5><i class="fa fa-circle m-r-5" style="color: #00bfc7;"></i>OPD</h5>
+                                </li>
+                                <li>
+                                    <h5><i class="fa fa-circle m-r-5" style="color: #b4becb;"></i>ICU</h5>
+                                </li>
+                            </ul>
+                            <div id="morris-area-chart2" style="height: 370px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+                <!-- /row -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="white-box">
+                            <h3 class="box-title m-b-0">New Patient List</h3>
+                            <p class="text-muted">this is the sample data here for crm</p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                            <th>Diseases</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Deshmukh</td>
+                                            <td>Prohaska</td>
+                                            <td>@Genelia</td>
+                                            <td><span class="label label-danger">Fever</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Deshmukh</td>
+                                            <td>Gaylord</td>
+                                            <td>@Ritesh</td>
+                                            <td><span class="label label-info">Cancer</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Sanghani</td>
+                                            <td>Gusikowski</td>
+                                            <td>@Govinda</td>
+                                            <td><span class="label label-warning">Lakva</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>@Hritik</td>
+                                            <td><span class="label label-success">Dental</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Joshi</td>
+                                            <td>Hickle</td>
+                                            <td>@Maruti</td>
+                                            <td><span class="label label-info">Cancer</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Nigam</td>
+                                            <td>Eichmann</td>
+                                            <td>@Sonu</td>
+                                            <td><span class="label label-success">Dental</span> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="white-box">
+                            <h3 class="box-title m-b-0">Laboratory Test</h3>
+                            <p class="text-muted">this is the sample data here for crm</p>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>ECG</th>
+                                            <th>Result</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Genelia Deshmukh</td>
+                                            <td><span class="peity-line" data-width="120" data-peity='{ "fill": ["#01c0c8"], "stroke":["#01c0c8"]}' data-height="40">0,-3,-2,-4,-5,-4,-3,-2,-5,-1</span> </td>
+                                            <td><span class="text-danger text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 28.76%</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Ajay Devgan</td>
+                                            <td><span class="peity-line" data-width="120" data-peity='{ "fill": ["#01c0c8"], "stroke":["#01c0c8"]}' data-height="40">0,-1,-1,-2,-3,-1,-2,-3,-1,-2</span> </td>
+                                            <td><span class="text-warning text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 8.55%</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Hrithik Roshan</td>
+                                            <td><span class="peity-line" data-width="120" data-peity='{ "fill": ["#01c0c8"], "stroke":["#01c0c8"]}' data-height="40">0,3,6,1,2,4,6,3,2,1</span> </td>
+                                            <td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 58.56%</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Steve Gection</td>
+                                            <td><span class="peity-line" data-width="120" data-peity='{ "fill": ["#01c0c8"], "stroke":["#01c0c8"]}' data-height="40">0,3,6,4,5,4,7,3,4,2</span> </td>
+                                            <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -501,7 +691,7 @@
                                 </li>
                                 <li>
                                     <div class="checkbox checkbox-warning">
-                                        <input id="checkbox2" type="checkbox" checked="" class="fxsdr">
+                                        <input id="checkbox2" type="checkbox" class="fxsdr">
                                         <label for="checkbox2"> Fix Sidebar </label>
                                     </div>
                                 </li>
@@ -521,7 +711,7 @@
                                 <li><a href="javascript:void(0)" theme="purple" class="purple-theme">5</a></li>
                                 <li><a href="javascript:void(0)" theme="megna" class="megna-theme working">6</a></li>
                                 <li><b>With Dark sidebar</b></li>
-                                <br/>
+                                <br />
                                 <li><a href="javascript:void(0)" theme="default-dark" class="default-dark-theme">7</a></li>
                                 <li><a href="javascript:void(0)" theme="green-dark" class="green-dark-theme">8</a></li>
                                 <li><a href="javascript:void(0)" theme="gray-dark" class="yellow-dark-theme">9</a></li>
@@ -532,28 +722,28 @@
                             <ul class="m-t-20 chatonline">
                                 <li><b>Chat option</b></li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                                 </li>
                             </ul>
                         </div>
@@ -562,37 +752,46 @@
                 <!-- /.right-sidebar -->
             </div>
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2017 &copy; Elite Admin brought to you by themedesigner.in </footer>
+            <footer class="footer text-center"> 2022 &copy; Dazzle Admin brought to you by dazzlesoftBD </footer>
+
         </div>
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
+
     <!-- jQuery -->
-    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap/dist/js/tether.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/bootstrap/dist/js/tether.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+
     <!--slimscroll JavaScript -->
-    <script src="js/jquery.slimscroll.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
-    <script src="js/waves.js"></script>
-    <script src="../plugins/bower_components/html5-editor/wysihtml5-0.3.0.js"></script>
-    <script src="../plugins/bower_components/html5-editor/bootstrap-wysihtml5.js"></script>
-    <script src="../plugins/bower_components/dropzone-master/dist/dropzone.js"></script>
-    <script>
-    $(document).ready(function() {
-
-        $('.textarea_editor').wysihtml5();
-
-    });
-    </script>
+    <script src="<?php echo base_url(); ?>assets/js/waves.js"></script>
+    <!--Morris JavaScript -->
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/raphael/raphael-min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/morrisjs/morris.js"></script>
+    <!-- Sparkline chart JavaScript -->
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- jQuery peity -->
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/peity/jquery.peity.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/peity/jquery.peity.init.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/custom.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/custom.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/dashboard1.js"></script>
     <!--Style Switcher -->
-    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+
+
 </body>
 
 </html>
+
+
+<!-- http://localhost:8088/ERP_CODEIG/ -->
