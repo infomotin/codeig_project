@@ -1,150 +1,149 @@
-<script src="<?php echo base_url(); ?>optimum/js/calculator.js" ></script>
+<script src="<?php echo base_url(); ?>optimum/js/calculator.js"></script>
 <script>
-                            function showPluginDetails() {
-                                var id = $('#pluginslist').val();
-                                $('.plugin-details').hide();
-                                $('#' + id).show();
-                                return;
-                            }
-                            </script>
-							
-							
-	<?php if (($this->session->flashdata('error_message')) != ""): ?>
-	<script type="text/javascript">
-    $(document).ready(function() {
-        $.toast({
-           
-            text: '<?php echo $this->session->flashdata('error_message'); ?>',
-            position: 'top-right',
-            loaderBg: '#f56954',
-            icon: 'warning',
-            hideAfter: 3500,
-            stack: 6
-        })
-    });
+    function showPluginDetails() {
+        var id = $('#pluginslist').val();
+        $('.plugin-details').hide();
+        $('#' + id).show();
+        return;
+    }
+</script>
+
+
+<?php if (($this->session->flashdata('error_message')) != "") : ?>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.toast({
+
+                text: '<?php echo $this->session->flashdata('error_message'); ?>',
+                position: 'top-right',
+                loaderBg: '#f56954',
+                icon: 'warning',
+                hideAfter: 3500,
+                stack: 6
+            })
+        });
     </script>
-	<?php endif; ?>
-	
-	<script type="text/javascript">
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+<?php endif; ?>
 
-                reader.onload = function (e) {
-                    $('#blah').attr('src', e.target.result);
-                }
+<script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-                reader.readAsDataURL(input.files[0]);
+            reader.onload = function(e) {
+                $('#blah').attr('src', e.target.result);
             }
+
+            reader.readAsDataURL(input.files[0]);
         }
-    </script> 
-	
-	<!-- ./wrapper -->
- <script type="text/javascript">
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+    }
+</script>
 
-                reader.onload = function (e) {
-                    $('#blah').attr('src', e.target.result);
-                }
+<!-- ./wrapper -->
+<script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-                reader.readAsDataURL(input.files[0]);
+            reader.onload = function(e) {
+                $('#blah').attr('src', e.target.result);
             }
+
+            reader.readAsDataURL(input.files[0]);
         }
-    </script>
-	
-	
-	<!-- jQuery -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/jquery/dist/jquery.min.js" ></script>
-	<script src="<?php echo base_url(); ?>optimum/js/fullcalendar/fullcalendar.min.js" ></script>
-	<script src="<?php echo base_url(); ?>optimum/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" ></script>
+    }
+</script>
 
-	<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/dropzone-master/dist/dropzone.js" ></script>
 
-	
-	 <!-- Magnific popup JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js" ></script>
-	<!--Wave Effects -->
-    <script src="<?php echo base_url(); ?>optimum/js/waves.js" ></script> 
+<!-- jQuery -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/js/fullcalendar/fullcalendar.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
 
-	<script src="<?php echo base_url(); ?>optimum/bootstrap/dist/js/tether.min.js" ></script> 
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/jquery/dist/jquery.min.js" ></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/bootstrap/dist/js/tether.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/bootstrap/dist/js/bootstrap.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js" ></script>
-    <!-- Menu Plugin JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
-    <!--slimscroll JavaScript -->
-	 <!-- icheck -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.init.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/js/jquery.slimscroll.js" ></script>
-	<script type="text/javascript">
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/dropzone-master/dist/dropzone.js"></script>
+
+
+<!-- Magnific popup JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+<!--Wave Effects -->
+<script src="<?php echo base_url(); ?>optimum/js/waves.js"></script>
+
+<script src="<?php echo base_url(); ?>optimum/bootstrap/dist/js/tether.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/bootstrap/dist/js/tether.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<!-- icheck -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.init.js"></script>
+<script src="<?php echo base_url(); ?>optimum/js/jquery.slimscroll.js"></script>
+<script type="text/javascript">
     $('.slimscrollsidebar').slimScroll({
         height: '100%'
     });
-   
-    </script>
-    <!--Wave Effects -->
-    <script src="<?php echo base_url(); ?>optimum/js/waves.js" ></script>
-    <!--Morris JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/raphael/raphael-min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/morrisjs/morris.js" ></script>
-    <!-- Sparkline chart JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js" ></script>
-    <!-- jQuery peity -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/peity/jquery.peity.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/peity/jquery.peity.init.js" ></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/js/custom.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/js/dashboard1.js" ></script>
- <!-- Calendar JavaScript -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/calendar/jquery-ui.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/moment/moment.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/calendar/dist/fullcalendar.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/calendar/dist/cal-init.js" ></script>
-    <!--Style Switcher -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/styleswitcher/jQuery.style.switcher.js" ></script>
-	 <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/html5-editor/wysihtml5-0.3.0.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/html5-editor/bootstrap-wysihtml5.js" ></script>
-	 <script src="<?php echo base_url(); ?>optimum/js/validator.js" ></script>
-	 
-	<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/switchery/dist/switchery.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/custom-select/custom-select.min.js" type="text/javascript" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js" type="text/javascript" ></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/multiselect/js/jquery.multi-select.js" ></script>
-	<link rel="stylesheet" href="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-rtl-master/dist/js/bootstrap-rtl.min.js" >
-	
-	 <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/datatables/jquery.dataTables.min.js" ></script>
-    <!-- start - This is for export functionality only -->
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js" ></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" ></script>
-    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js" ></script>
-    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js" ></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js" ></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js" ></script>
-    <!-- end - This is for export functionality only -->
-	<!-- icheck -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.min.js" ></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.init.js" ></script>
-	 <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/clockpicker/dist/jquery-clockpicker.min.js" ></script>
-	 
-	 <script src="<?php echo base_url(); ?>optimum/js/materialize.min.js"></script>
-	     <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/dropify/dist/js/dropify.min.js" ></script>
+</script>
+<!--Wave Effects -->
+<script src="<?php echo base_url(); ?>optimum/js/waves.js"></script>
+<!--Morris JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/raphael/raphael-min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/morrisjs/morris.js"></script>
+<!-- Sparkline chart JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+<!-- jQuery peity -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/peity/jquery.peity.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/peity/jquery.peity.init.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/js/custom.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/js/dashboard1.js"></script>
+<!-- Calendar JavaScript -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/calendar/jquery-ui.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/moment/moment.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/calendar/dist/fullcalendar.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/calendar/dist/cal-init.js"></script>
+<!--Style Switcher -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/html5-editor/wysihtml5-0.3.0.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/html5-editor/bootstrap-wysihtml5.js"></script>
+<script src="<?php echo base_url(); ?>optimum/js/validator.js"></script>
 
-	 
-	 <!--Wave Effects -->
-    <script src="js/waves.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/gallery/js/animated-masonry-gallery.js" ></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/gallery/js/jquery.isotope.min.js" ></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/fancybox/ekko-lightbox.min.js" ></script>
-    <script type="text/javascript">
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/switchery/dist/switchery.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/custom-select/custom-select.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/multiselect/js/jquery.multi-select.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>optimum/plugins/bower_components/bootstrap-rtl-master/dist/js/bootstrap-rtl.min.js">
+
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+<!-- start - This is for export functionality only -->
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+<!-- end - This is for export functionality only -->
+<!-- icheck -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/icheck/icheck.init.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/clockpicker/dist/jquery-clockpicker.min.js"></script>
+
+<script src="<?php echo base_url(); ?>optimum/js/materialize.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/dropify/dist/js/dropify.min.js"></script>
+
+
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/gallery/js/animated-masonry-gallery.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/gallery/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>optimum/plugins/bower_components/fancybox/ekko-lightbox.min.js"></script>
+<script type="text/javascript">
     $(document).ready(function($) {
         // delegate calls to data-toggle="lightbox"
         $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
@@ -196,30 +195,30 @@
 
 
     });
-    </script>
-	 
-	 
-	 <!-- Chart Files -->
-		<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/flot.tooltip/flot.tooltip.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.pie.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.categories.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.resize.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/liquid-meter/liquid.meter.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/snap.svg/snap.svg.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/snap.svg/snap.svg.js"></script>
-		<script src="<?php echo base_url(); ?>optimum/liquid-meter/liquid.meter.js"></script>
-	
-		<!-- Examples -->
-		<script src="<?php echo base_url();?>assets/javascripts/dashboard/custom_dashboard.js"></script>
-		<script src="<?php echo base_url();?>assets/javascripts/forms/custom_validation.js"></script>
-        <script src="<?php echo base_url();?>assets/javascripts/tables/examples.datatables.default.js"></script>
-		<script src="<?php echo base_url();?>assets/javascripts/tables/examples.datatables.tabletools.js"></script>
-	 
+</script>
+
+
+<!-- Chart Files -->
+<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.js"></script>
+<script src="<?php echo base_url(); ?>optimum/flot.tooltip/flot.tooltip.js"></script>
+<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.pie.js"></script>
+<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.categories.js"></script>
+<script src="<?php echo base_url(); ?>optimum/flot/jquery.flot.resize.js"></script>
+<script src="<?php echo base_url(); ?>optimum/liquid-meter/liquid.meter.js"></script>
+<script src="<?php echo base_url(); ?>optimum/snap.svg/snap.svg.js"></script>
+<script src="<?php echo base_url(); ?>optimum/snap.svg/snap.svg.js"></script>
+<script src="<?php echo base_url(); ?>optimum/liquid-meter/liquid.meter.js"></script>
+
+<!-- Examples -->
+<script src="<?php echo base_url(); ?>assets/javascripts/dashboard/custom_dashboard.js"></script>
+<script src="<?php echo base_url(); ?>assets/javascripts/forms/custom_validation.js"></script>
+<script src="<?php echo base_url(); ?>assets/javascripts/tables/examples.datatables.default.js"></script>
+<script src="<?php echo base_url(); ?>assets/javascripts/tables/examples.datatables.tabletools.js"></script>
+
 <script src="<?php echo base_url(); ?>optimum/js/jquery.PrintArea.js" type="text/JavaScript"></script>
 
-	 
-	  <script>
+
+<script>
     $(document).ready(function() {
         $("#print").click(function() {
             var mode = 'iframe'; //popup
@@ -231,15 +230,15 @@
             $("div.printableArea").printArea(options);
         });
     });
-    </script>
-	
-	  <!-- Chart JS -->
-	<!-- <script src="<?php echo base_url(); ?>optimum/fullcalendar/js/index.js"></script>-->
+</script>
 
-   		<!--<script src="<?php echo base_url();?>assets/js/fullcalendar/fullcalendar.min.js"></script>-->
-		<!--<script src="assets/js/neon-calendar.js"></script>-->
+<!-- Chart JS -->
+<!-- <script src="<?php echo base_url(); ?>optimum/fullcalendar/js/index.js"></script>-->
 
-   <script>
+<!--<script src="<?php echo base_url(); ?>assets/js/fullcalendar/fullcalendar.min.js"></script>-->
+<!--<script src="assets/js/neon-calendar.js"></script>-->
+
+<script>
     $(document).ready(function() {
         $('#myTable').DataTable();
         $(document).ready(function() {
@@ -290,25 +289,23 @@
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
     });
-    </script>
-	
-	
-    <script>
+</script>
+
+
+<script>
     $(document).ready(function() {
 
         $('.textarea_editor').wysihtml5();
 
 
     });
-    </script>
-	
-	
+</script>
+
+
 <script>
-    function checkDelete()
-    {
+    function checkDelete() {
         var chk = confirm("Are You Sure To Delete This !");
-        if (chk)
-        {
+        if (chk) {
             return true;
         } else {
             return false;
@@ -316,7 +313,7 @@
     }
 </script>
 <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/tinymce/tinymce.min.js"></script>
-    <script>
+<script>
     $(document).ready(function() {
 
         if ($("#mymce").length > 0) {
@@ -334,9 +331,9 @@
             });
         }
     });
-    </script>
-	
-	<script type="text/javascript">
+</script>
+
+<script type="text/javascript">
     //Alerts
 
     $(".myadmin-alert .closed").click(function(event) {
@@ -359,8 +356,8 @@
     $(".showtop2").click(function() {
         $(".alerttop2").fadeToggle(350);
     });
-	</script>
-	 <script>
+</script>
+<script>
     // Clock pickers
     $('#single-input').clockpicker({
         placement: 'bottom',
@@ -439,29 +436,29 @@
             days: 6
         }
     });
+</script>
+
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+<?php if (($this->session->flashdata('flash_message')) != "") : ?>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.toast({
+                heading: 'Congratulations!!!',
+                text: '<?php echo $this->session->flashdata('flash_message'); ?>',
+                position: 'top-right',
+                loaderBg: '#ff6849',
+                icon: 'success',
+                hideAfter: 3500,
+                stack: 6
+            })
+        });
     </script>
-	
-	<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
-	<?php if (($this->session->flashdata('flash_message')) != ""): ?>
-	<script type="text/javascript">
-    $(document).ready(function() {
-        $.toast({
-			heading: 'Congratulations!!!',
-            text: '<?php echo $this->session->flashdata('flash_message'); ?>',
-            position: 'top-right',
-            loaderBg: '#ff6849',
-            icon: 'success',
-            hideAfter: 3500,
-            stack: 6
-        })
-    });
-    </script>
-	<?php endif; ?>
-	
-	
-	
-	
-	<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/switchery/dist/switchery.min.js"></script>
+<?php endif; ?>
+
+
+
+
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/switchery/dist/switchery.min.js"></script>
 <script>
     jQuery(document).ready(function() {
         // Switchery
@@ -545,57 +542,59 @@
         });
 
     });
-    </script>
-    <!--Style Switcher -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
-	
-	<script type="text/javascript" src="<?php echo base_url(); ?>optimum/date/daterangepicker.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>optimum/date/daterangepicker.css" />
-	<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
-	
-			
+</script>
+<!--Style Switcher -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url(); ?>optimum/date/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>optimum/date/daterangepicker.css" />
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+
+
 <script src="<?php echo base_url(); ?>js/meteorEmoji.min.js"></script>
-  <script>
+<script>
     (() => {
-      new MeteorEmoji()
+        new MeteorEmoji()
     })()
-  </script>
-  
-  <script src="<?php echo base_url(); ?>js/chat.js"></script>
-  
-  <script type="text/javascript">
-var audioUrl = '<?php echo base_url(); ?>uploads/chat.mp3';
-// SIMPLE EXEMPLE
-var audio = new Audio(audioUrl); // define your audio
-$('.btn').click( () => audio.play() ); // that will do the trick !!
+</script>
 
-// ADVANCED EXEMPLE
+<script src="<?php echo base_url(); ?>js/chat.js"></script>
 
-// array with souds to cycle trough
-// the more in the array, the faster you can retrigger the click 
-var audio2 = [new Audio(audioUrl), new Audio(audioUrl), new Audio(audioUrl), new Audio(audioUrl), new Audio(audioUrl)]; // put it has much has you want
-var soundNb = 0; // counter
+<script type="text/javascript">
+    var audioUrl = '<?php echo base_url(); ?>uploads/chat.mp3';
+    // SIMPLE EXEMPLE
+    var audio = new Audio(audioUrl); // define your audio
+    $('.btn').click(() => audio.play()); // that will do the trick !!
 
-$('.btn2').click( () => audio2[ soundNb++ % audio2.length ].play());
+    // ADVANCED EXEMPLE
 
+    // array with souds to cycle trough
+    // the more in the array, the faster you can retrigger the click 
+    var audio2 = [new Audio(audioUrl), new Audio(audioUrl), new Audio(audioUrl), new Audio(audioUrl), new Audio(audioUrl)]; // put it has much has you want
+    var soundNb = 0; // counter
+
+    $('.btn2').click(() => audio2[soundNb++ % audio2.length].play());
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.set_langs').on('click', function () {
+    $(document).ready(function() {
+        $('.set_langs').on('click', function() {
             var lang_url = $(this).data('href');
-            $.ajax({url: lang_url, success: function (result) {
+            $.ajax({
+                url: lang_url,
+                success: function(result) {
                     location.reload();
-                }});
+                }
+            });
         });
     });
 </script>
 
 
 
- <!-- jQuery file upload -->
-    <script>
+<!-- jQuery file upload -->
+<script>
     $(document).ready(function() {
         // Basic
         $('.dropify').dropify();
@@ -603,10 +602,10 @@ $('.btn2').click( () => audio2[ soundNb++ % audio2.length ].play());
         // Translated
         $('.dropify-fr').dropify({
             messages: {
-                default: 'Glissez-déposez un fichier ici ou cliquez',
-                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                default: 'Glissez-dï¿½posez un fichier ici ou cliquez',
+                replace: 'Glissez-dï¿½posez un fichier ou cliquez pour remplacer',
                 remove: 'Supprimer',
-                error: 'Désolé, le fichier trop volumineux'
+                error: 'Dï¿½solï¿½, le fichier trop volumineux'
             }
         });
 
@@ -636,11 +635,11 @@ $('.btn2').click( () => audio2[ soundNb++ % audio2.length ].play());
             }
         })
     });
-    </script>
-		
-		<!--BlockUI Script -->
-    <script src="<?php echo base_url(); ?>optimum/plugins/bower_components/blockUI/jquery.blockUI.js"></script>
-    <script type="application/javascript">
+</script>
+
+<!--BlockUI Script -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/blockUI/jquery.blockUI.js"></script>
+<script type="application/javascript">
     // This is for BlockUI plugin demo
     $('#blockbtn1').click(function() {
         $('div.block1').block({
@@ -710,55 +709,57 @@ $('.btn2').click( () => audio2[ soundNb++ % audio2.length ].play());
     $('#unblockbtn6').click(function() {
         $('div.block6').unblock();
     });
-    </script>
-	
-	 <!-- Session-timeout-idle 
+</script>
+
+<!-- Session-timeout-idle 
     <script src="<?php echo base_url(); ?>optimum/idle/jquery.idletimeout.js"></script>
     <script src="<?php echo base_url(); ?>optimum/idle/jquery.idletimer.js"></script>
     <script src="<?php echo base_url(); ?>optimum/idle/session-timeout-idle-init.js"></script>
     -->
-	
-	<script>
-    function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
 
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  // add a zero in front of numbers<10
-  m = checkTime(m);
-  s = checkTime(s);
-  var ampm = " PM "
+<script>
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+        var ampm = " PM "
         if (h < 12) {
             ampm = " AM "
         }
-  document.getElementById('time').innerHTML = h + ":" + m + ":" + s + ampm;
-  t = setTimeout(function() {
-    startTime()
-  }, 500);
-}
-startTime();
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s + ampm;
+        t = setTimeout(function() {
+            startTime()
+        }, 500);
+    }
+    startTime();
 </script>
 
- <!-- jQuery for carousel -->
-    <script src="<?php echo base_url();?>optimum/plugins/bower_components/owl.carousel/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url();?>optimum/plugins/bower_components/owl.carousel/owl.custom.js"></script>
-	
-	<script src="<?php echo base_url('js/font-awesome-icon-picker/fontawesome-four-iconpicker.min.js');?>" charset="utf-8"></script>
+<!-- jQuery for carousel -->
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/owl.carousel/owl.carousel.min.js"></script>
+<script src="<?php echo base_url(); ?>optimum/plugins/bower_components/owl.carousel/owl.custom.js"></script>
+
+<script src="<?php echo base_url('js/font-awesome-icon-picker/fontawesome-four-iconpicker.min.js'); ?>" charset="utf-8"></script>
 
 <script>
-$(document).ready(function() {
-    $(".html5editor").each(function(){$(this).wysihtml5();});
-});
-$(function() {
-   $('.icon-picker').iconpicker();
- });
+    $(document).ready(function() {
+        $(".html5editor").each(function() {
+            $(this).wysihtml5();
+        });
+    });
+    $(function() {
+        $('.icon-picker').iconpicker();
+    });
 </script>
 </body>
 
